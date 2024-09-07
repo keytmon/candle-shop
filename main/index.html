@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Candle Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link type="image/x-icon" href="images/favicon.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="images/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="header__background">
+        <img src="images/background.jpg" alt="candles">
+    </div>
+    <div class="header-content">
+        <div class="header__menu">
+            <div class="header__logo">
+                <a href="index.html"><p>Candle shop</p></a>
+            </div>
+            <div class="header__catalog"><a href="">Каталог</a></div>
+            <div class="header__delivery"><a href="#delivery">Доставка</a></div>
+            <div class="header__questions"><a href="#q&a">Вопросы</a></div>
+            <div class="header__about-us"><a href="">Контакты</a></div>
+            <div class="header__icons">
+                <button class="header__like-button">
+                    <img class="header__like like" src="images/like.png" alt="heart">
+                </button>
+                <button class="header__basket-button">
+                    <img class="header__basket basket" src="images/basket.png" alt="basket">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__banner-content">
+        <div class="header__banner-text">
+            <div class="header__title"><h1>Ароматы<br> воспоминаний</h1></div>
+            <div class="header__text small-text">Ароматические свечи ручной работы</div>
+        </div>
+        <div class="header__banner-button">
+            <button class="header__button button-catalog">Каталог</button>
+        </div>
+    </div>
+</header>
+<div class="screen-catalog">
+    <div class="screen-catalog__content">
+        <p class="screen-catalog__text medium-text">Создавайте<br> свою<br> атмосферу</p>
+        <img class="screen-catalog__img" src="images/candle-main-catalog.jpg" alt="candle">
+        <p class="screen-catalog__text medium-text">Выбирайте<br> свой<br> аромат</p>
+    </div>
+    <div class="screen-catalog__button-container">
+        <button class="screen-catalog__button button-catalog">Каталог</button>
+    </div>
+</div>
+<div class="popular-goods">
+<!--    <div class="popular-goods__content">-->
+        <div class="popular-goods__title medium-text"><h2>Популярные товары</h2></div>
+        <div class="popular-goods__cards goods">
+            <div class="popular-goods__card-1 candle-card">
+                    <div class="popular-goods__card-img-left card-img">
+                        <p>
+                            <img src="images/candle-3-1.png" alt="candle">
+                        </p>
+                    </div>
+                    <p class="popular-goods__card-name small-text">Ароматическая свеча "Lemongrass & Jasmine"</p>
+                <div class="popular-goods__card-bottom-info catalog-card-bottom-info">
+                    <div class="popular-goods__price-and-weight">
+                        <span class="popular-goods__card-price catalog-card-price">1200 руб.</span>
+                        <span class="popular-goods__candle-weight card-weight">100 гр.</span>
+                    </div>
+                    <div class="popular-goods__card-buttons">
+                        <button class="popular-goods__button-like catalog-like-button">
+                            <img class="popular-goods__icon-like catalog-icon" src="images/like.png" alt="heart">
+                        </button>
+                        <button class="popular-goods__button-basket catalog-basket-button">
+                            <img class="popular-goods__icon-basket catalog-icon" src="images/basket.png" alt="basket">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-goods__card-2 candle-card">
+                <div class="popular-goods__card-img card-img">
+                <p>
+                    <img src="images/candle-7-1.png" alt="candle">
+                </p>
+                </div>
+                <p class="popular-goods__card-name-center small-text">Ароматическая свеча "Thinking of you<sup>♡</sup>"</p>
+                <div class="popular-goods__card-bottom-info catalog-card-bottom-info">
+                    <div class="popular-goods__price-and-weight">
+                        <span class="popular-goods__card-price catalog-card-price">1500 руб.</span>
+                        <span class="popular-goods__candle-weight card-weight">100 гр.</span>
+                    </div>
+                    <div class="popular-goods__card-buttons">
+                        <button class="popular-goods__button-like catalog-like-button">
+                            <img class="popular-goods__icon-like catalog-icon" src="images/like.png" alt="heart">
+                        </button>
+                        <button class="popular-goods__button-basket catalog-basket-button">
+                            <img class="popular-goods__icon-basket catalog-icon" src="images/basket.png" alt="basket">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-goods__card-3 candle-card">
+                <div class="popular-goods__card-img-right card-img">
+                    <p>
+                        <img src="images/candle-8-1.png" alt="candle">
+                    </p>
+                </div>
+                <p class="popular-goods__card-name small-text">Ароматическая свеча "Vanilla Bean"</p>
+                <div class="popular-goods__card-bottom-info catalog-card-bottom-info">
+                    <div class="popular-goods__price-and-weight">
+                        <span class="popular-goods__card-price catalog-card-price">1300 руб.</span>
+                        <span class="popular-goods__candle-weight card-weight">100 гр.</span>
+                    </div>
+                    <div class="popular-goods__card-buttons">
+                        <button class="popular-goods__button-like catalog-like-button">
+                            <img class="popular-goods__icon-like catalog-icon" src="images/like.png" alt="heart">
+                        </button>
+                        <button class="popular-goods__button-basket catalog-basket-button">
+                            <img class="popular-goods__icon-basket catalog-icon" src="images/basket.png" alt="basket">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--    </div>-->
+</div>
+<div class="advantages">
+    <div class="advantages__block-title medium-text"><h2>Польза ароматических свечей</h2></div>
+    <div class="advantages__content">
+        <div class="advantages__item-container">
+            <div class="advantages__card">
+                <div class="advantages__img-background">
+                    <img class="advantage__img" src="images/advantages-1.png" alt="atmosphere">
+                </div>
+                <div class="advantages__text">
+                    <p class="advantages__title small-text">Атмосфера</p>
+                    <p class="advantages__description">Даже одна свеча создает уникальную
+                    атмосферу и хорошее настроение дома</p>
+                </div>
+            </div>
+        </div>
+        <div class="advantages__item-container">
+            <div class="advantages__card">
+                <div class="advantages__img-background">
+                        <img class="advantage__img" src="images/advantages-2.png" alt="design">
+                </div>
+                <div class="advantages__text">
+                    <p class="advantages__title small-text">Дизайн</p>
+                    <p class="advantages__description">Наши свечи впишутся в любой интерьер
+                    и будут являться дополнением любого дизайна</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="advantages__item-container">
+            <div class="advantages__card">
+                <div class="advantages__img-background">
+                    <img class="advantage__img" src="images/advantages-3.png" alt="eco-friendliness">
+                </div>
+                <div class="advantages__text">
+                    <p class="advantages__title small-text">Экологичность</p>
+                    <p class="advantages__description">Ароматические свечи изготовлены из
+                    натуральных ароматических масел</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="questions">
+    <div class="questions__title medium-text"><h2 id="q&a">Часто задаваемые вопросы</h2></div>
+    <div class="questions__content">
+        <div class="questions__text-container">
+            <div class="questions__item">
+                <p class="questions__question small-text ">Как правильно жечь свечи?</p>
+                <p class="questions__answer">Если вы держите свечу меньше двух часов, то воск
+                плавится неравномерно. Свечу не рекомендуется задувать, дым от фитиля затмевает запах,
+                который источала свеча. Хлопчатобумажный фитиль необходимо подрезать ножницами
+                перед использованием, чтобы пламя не поднималось слишком высоко.</p>
+            </div>
+            <div class="questions__item">
+                <p class="questions__question small-text not-visible">Вредны ли ароматические свечи?</p>
+                <p class="questions__answer"></p>
+            </div>
+            <div class="questions__item">
+                <p class="questions__question small-text not-visible">Что добавляют в свечи для запаха?</p>
+                <p class="questions__answer"></p>
+            </div>
+            <div class="questions__item">
+                <p class="questions__question small-text not-visible">Почему свеча не пахнет при горении?</p>
+                <p class="questions__answer"></p>
+            </div>
+            <div class="questions__item">
+                <p class="questions__question small-text not-visible">Из чего делают ароматические свечи?</p>
+                <p class="questions__answer"></p>
+            </div>
+        </div>
+        <div class="questions__img-container">
+            <img src="images/candle-main-questions.jpg" alt="candle">
+        </div>
+    </div>
+</div>
+<div class="order-and-delivery">
+    <div class="order-and-delivery__block-title medium-text"><h2 id="delivery">Заказ и доставка</h2></div>
+    <div class="order-and-delivery__content">
+        <div class="order-and-delivery__item-container">
+            <div class="order-and-delivery__card">
+                <div class="order-and-delivery__img-background">
+                    <img class="advantage__img" src="images/order-1.png" alt="select-product">
+                </div>
+                <div class="order-and-delivery__text">
+                    <p class="order-and-delivery__title small-text">Выбор товара</p>
+                    <p class="order-and-delivery__description">После того, как Вы выбрали в каталоге
+                    понравившиеся товары, добавили в корзину и оплатили, дождитесь подтверждения
+                    заказа.</p>
+                </div>
+            </div>
+        </div>
+        <div class="order-and-delivery__item-container">
+            <div class="order-and-delivery__card">
+                <div class="order-and-delivery__img-background">
+                    <img class="advantage__img" src="images/order-2.png" alt="order-confirmation">
+                </div>
+                <div class="order-and-delivery__text">
+                    <p class="order-and-delivery__title small-text">Подтверждение заказа</p>
+                    <p class="order-and-delivery__description">После подтверждения заказа мы переходим
+                    к его изготовлению. Срок изготовления - 2-3 дня после подтверждения заказа.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="order-and-delivery__item-container">
+            <div class="order-and-delivery__card">
+                <div class="order-and-delivery__img-background">
+                    <img class="advantage__img" src="images/order-3.png" alt="delivery">
+                </div>
+                <div class="order-and-delivery__text">
+                    <p class="order-and-delivery__title small-text">Отправка заказа</p>
+                    <p class="order-and-delivery__description">Когда заказ будет готов, мы упакуем его
+                    и передадим в службу доставки, вышлем Вам трек-номер для отслеживания отправления.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="subscription">
+    <div class="subscription__container">
+        <div class="subscription__content">
+            <div class="subscription__title medium-text"><h2>Подписка</h2></div>
+            <div class="subscription__description small-text"><p>Я хочу получать информацию
+            о новых поступлениях</p></div>
+            <form class="subscription__form">
+                <input class="subscription__fio" placeholder="Фамилия Имя Отчество"><br>
+                <input class="subscription__phone" placeholder="Номер телефона">
+                <input class="subscription__email" placeholder="E-mail"><br>
+                <input class="subscription__checkbox" id="agree" type="checkbox">
+                <label for="agree">Согласен(на) на обработку персональных данных.</label>
+            </form>
+            <button class="subscription__button button-send">Отправить</button>
+        </div>
+        <img src="images/candle-main-3.jpg" alt="candle">
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer__content">
+        <div class="footer__logo">Candle<br>shop</div>
+        <div class="footer__menu">
+            <a href=""><p class="footer__catalog">Каталог</p></a>
+            <a href=""><p class="footer__contacts">Контакты</p></a>
+        </div>
+        <div class="footer__call-back">
+            <p></p>
+            <form class="footer__call-back-form">
+                <label for="call-back" class="footer__call-back-input-label">
+                    Заказать обратный звонок
+                </label>
+                <input id="call-back" class="footer__call-back-input" placeholder="+7 (***) 000-00-00">
+            </form>
+
+        </div>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
