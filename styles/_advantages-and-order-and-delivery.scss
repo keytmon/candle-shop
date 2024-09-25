@@ -1,0 +1,36 @@
+body {
+  .advantages,
+  .order-and-delivery {
+    padding: 2rem 0;
+
+    &__content {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 4rem 0;
+    }
+
+    &__title {
+      padding: 1.5rem 0;
+      font-weight: bold;
+    }
+
+    &__img-background {
+      background-color: rgba(90,94,97,0.1);
+      border-radius: 50%;
+      padding: 2rem;
+      max-width: 12rem;
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    &__item-container {
+      max-width: 24rem;
+    }
+  }
+}

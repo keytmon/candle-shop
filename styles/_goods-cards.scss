@@ -1,0 +1,40 @@
+body {
+  .goods {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem 0;
+  }
+
+  .candle-card {
+    max-width: 26rem;
+  }
+
+  .card-img {
+    background-color: rgba(90,94,97,0.1);
+    padding: 4rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .catalog-card-bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .catalog-card-price,
+  .catalog-like-button {
+    padding-right: 1rem;
+  }
+
+  .catalog-icon {
+    width: 1.8rem;
+  }
+
+  .catalog-basket-button {
+    background-color: #D1C4CE;
+    border-radius: 50%;
+    padding: 0.4rem;
+  }
+}

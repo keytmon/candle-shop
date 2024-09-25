@@ -1,0 +1,69 @@
+body {
+  .header {
+
+    &__background {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+
+      img {
+        filter: brightness(70%);
+        z-index: 0;
+        max-width: 100vw;
+      }
+    }
+
+    .header-content {
+      background-color: rgba(244, 242, 243, 0.6);
+      display: flex;
+      position: relative;
+      z-index: 1;
+      width: 100vw;
+    }
+
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      width: 100vw;
+      padding: 1rem 4rem;
+      font-size: 1rem;
+    }
+
+    .menu-light {
+      border-bottom: 1.5px solid rgba(90,94,97,0.6);
+    }
+
+    &__logo {
+      font-family: "Permanent Marker", cursive;
+      font-size: 3rem;
+    }
+
+    &__icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 5vw;
+    }
+
+    .like,
+    .basket {
+      width: 2rem;
+    }
+
+    &__banner-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      margin-top: 6rem;
+      margin-left: 6rem;
+    }
+
+    &__button {
+      background-color: #444748;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+body {
+  @media screen and (max-width: 1700px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    .medium-text {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 2.6rem;
+    }
+
+    .small-text {
+      font-size: 1.2rem;
+    }
+
+    .header__banner-content {
+      margin-top: 4rem;
+      margin-left: 6rem;
+    }
+
+    &__icons {
+      width: 10vw;
+    }
+
+    .like,
+    .basket {
+      width: 0.8rem;
+    }
+
+    .screen-catalog__img {
+      max-height: 60vh;
+    }
+
+    input {
+      max-width: 40rem;
+    }
+
+    .subscription__phone,
+    .subscription__email {
+      max-width: 18rem;
+    }
+
+    .subscription__inputs-phone-and-email {
+      max-width: 44rem;
+    }
+
+    .card-img {
+      img {
+        max-height: 12.8rem;
+      }
+    }
+    .candle-card {
+      max-width: 23rem;
+    }
+
+  }
+}

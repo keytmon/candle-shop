@@ -1,0 +1,75 @@
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+  scrollbar-color: #444748 transparent;
+  scrollbar-width: thin;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: #F4F2F3;
+  font-family:  'Comfortaa', sans-serif;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .button-catalog,
+  .button-send,
+  .button-filter{
+    font-family:  'Comfortaa', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+    background-color: #5A5E61;
+    height: 3rem;
+    width: 10rem;
+    color: #F4F2F3;
+    margin-top: 3rem;
+  }
+
+  h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  input {
+    font-family:  'Comfortaa', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 2.5rem;
+    margin: 0.5rem 0;
+    padding-left: 2rem;
+    border: 2px solid rgba(90,94,97,0.2);
+    background-color: transparent;
+    height: 3.5rem;
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .medium-text {
+    font-family: "Playfair Display", serif;
+    font-size: 2.6rem;
+  }
+
+  .small-text {
+    font-size: 1.4rem;
+  }
+
+  .bread-crumbs {
+    margin-left: 4rem;
+  }
+
+}

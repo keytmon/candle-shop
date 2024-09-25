@@ -1,0 +1,75 @@
+body {
+  .catalog {
+    padding: 2rem 0;
+
+    &__content {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__title {
+      font-size: 2.8rem;
+      text-align: center;
+      padding: 2rem 0;
+      font-weight: initial;
+    }
+
+    &__sidebar {
+      display: flex;
+      flex-direction: column;
+      max-width: 30rem;
+    }
+
+    .candle-card {
+      margin-right: 3rem;
+    }
+
+    .goods {
+      padding: 0;
+    }
+
+    //&__filter-buttons {
+    //  display: flex;
+    //  flex-direction: column;
+    //  justify-content: center;
+    //}
+
+    //.button-filter {
+    //  margin: 1rem 0;
+    //  width: 12rem;
+    //}
+
+    //&__filter-reset {
+    //  background-color: #A06C55;
+    //}
+
+    &__filter-title {
+      font-weight: bold;
+      padding-bottom: 1rem;
+    }
+
+
+    //input {
+    //  max-height: 1rem;
+    //  margin: 0;
+    //}
+    //
+    //label {
+    //  margin-left: 0.5rem;
+    //}
+
+    &__filter-collection {
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 0;
+    }
+
+    &__filter-button {
+      padding-right: 1rem;
+      img {
+        content: url("/images/filter-star.png");
+        width: 1.2rem;
+      }
+    }
+  }
+}

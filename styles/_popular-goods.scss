@@ -1,0 +1,28 @@
+body {
+  .popular-goods,
+  .similar-goods {
+
+    padding: 2rem 0;
+
+    .small-text {
+      text-align: left;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    &__card-img-left {
+      border-bottom-left-radius: 100%;
+    }
+
+    &__card-img-right {
+      border-top-right-radius: 100%;
+    }
+
+    &__card-name-center {
+      line-height: 1.125rem;
+    }
+
+  }
+}
