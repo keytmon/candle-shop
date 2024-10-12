@@ -1,0 +1,42 @@
+body {
+
+  .goods-list {
+
+    &__card-img {
+      max-width: 10rem;
+    }
+
+    &__container {
+      margin-bottom: 4rem;
+    }
+
+    &__item-container {
+      border-bottom: 2px solid rgba(90,94,97,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 7rem;
+      padding: 1rem 0;
+    }
+
+    &__price {
+      padding-top: 1rem;
+    }
+
+    &__add-favorite-button {
+      width: 12rem;
+      //margin-right: 2rem;
+    }
+
+    &__order-button {
+      width: 15rem;
+      margin-bottom: 4rem;
+      left: 43vw;
+    }
+
+    .button-catalog {
+      margin-top: 0;
+      position: relative;
+    }
+  }
+}

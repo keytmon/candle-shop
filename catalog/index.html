@@ -41,7 +41,9 @@
                     <img class="header__like like" src="/images/like.png" alt="heart">
                 </button>
                 <button class="header__basket-button">
-                    <img class="header__basket basket" src="/images/basket.png" alt="basket">
+                    <a href="http://localhost:63342/candle-shop/basket/">
+                        <img class="header__basket basket" src="/images/basket.png" alt="basket">
+                    </a>
                 </button>
             </div>
         </div>
@@ -192,20 +194,38 @@
             </a>
         </div>
         <div class="footer__menu">
-            <a href="index.html"><span class="footer__catalog">Каталог</span></a>
+            <a href="index.html"><span class="footer__catalog menu-item">Каталог</span></a>
             <a href="http://localhost:63342/candle-shop/contacts/index.html">
-                <span class="footer__contacts">Контакты</span>
+                <span class="footer__contacts menu-item">Контакты</span>
             </a>
-            <a href="http://localhost:63342/candle-shop/main/index.html?#delivery"><span class="footer__delivery">Доставка</span></a>
+            <a href="http://localhost:63342/candle-shop/main/index.html?#delivery">
+                <span class="footer__delivery menu-item">Доставка</span>
+            </a>
+        </div>
+        <div class="footer__social-media">
+            <button class="footer__telegram social-media-button">
+                <a href="https://web.telegram.org/" target="_blank">
+                    <img src="/images/telegram.png" alt="telegram">
+                </a>
+            </button>
+            <button class="footer__instagram social-media-button">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="/images/instagram.png" alt="instagram">
+                </a>
+            </button>
+            <button class="footer__pinterest social-media-button">
+                <a href="https://ru.pinterest.com/" target="_blank">
+                    <img src="/images/pinterest.png" alt="pinterest">
+                </a>
+            </button>
         </div>
         <div class="footer__call-back">
-            <p></p>
             <form class="footer__call-back-form">
                 <label for="call-back" class="footer__call-back-input-label">
                     Заказать обратный звонок
                 </label><br>
                 <input id="call-back" class="footer__call-back-input" placeholder="+7 (***) 000-00-00">
-                <img src="../images/phone-call.png" alt="phone">
+                <img class="footer__call-back-img" src="/images/phone-call.png" alt="phone">
             </form>
         </div>
     </div>

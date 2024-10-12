@@ -55,8 +55,12 @@ body .footer input {
 }
 body .footer__menu {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 40rem;
+}
+body .footer .menu-item {
+  display: inline-block;
+  padding-bottom: 1rem;
 }
 body .footer input {
   border: 2px solid rgba(244, 242, 243, 0.7);
@@ -67,10 +71,18 @@ body .footer label {
   display: inline-block;
   padding-bottom: 1rem;
 }
-body .footer img {
+body .footer__call-back-img {
   width: 1.6rem;
   margin-bottom: -0.4rem;
   margin-left: -3.2rem;
+}
+body .footer__social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+}
+body .footer__social-media img {
+  width: 1.6rem;
 }
 
 html {
@@ -526,6 +538,171 @@ body .card__candle-quantity-counter-container {
   display: flex;
   justify-content: space-between;
   width: 4rem;
+}
+
+body {
+  position: relative;
+  z-index: 3;
+}
+body .favorites {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body .favorites__container {
+  background-color: #F4F2F3;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 35vw;
+  height: 100vh;
+  position: relative;
+  left: 65%;
+}
+body .favorites__head {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1.5px solid rgba(90, 94, 97, 0.4);
+}
+body .favorites__title {
+  padding: 2rem 0 1rem 1rem;
+  font-weight: bold;
+}
+body .favorites__closed-button {
+  align-self: flex-start;
+}
+body .favorites__closed-button img {
+  max-width: 1.5rem;
+}
+body .favorites__item {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .favorites__item img {
+  max-width: 6rem;
+}
+body .favorites__item-text {
+  max-width: 18rem;
+  padding-left: 1rem;
+}
+body .favorites__candle-name {
+  padding-bottom: 0.8rem;
+}
+body .favorites__cancel-button {
+  padding-left: 1rem;
+}
+body .favorites__cancel-button img {
+  content: url("/images/cancel.png");
+  max-width: 1.2rem;
+}
+body .favorites__cancel-button.hover img {
+  content: url("/images/cancel-active.png");
+}
+
+body .basket-head__bread-crumbs {
+  padding: 2rem 0;
+}
+body .basket-head__title {
+  font-size: 2.8rem;
+  font-weight: normal;
+}
+body .basket-head__head-container {
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 7rem;
+  border-bottom: 2px solid rgba(90, 94, 97, 0.4);
+}
+
+body .goods-list__card-img {
+  max-width: 10rem;
+}
+body .goods-list__container {
+  margin-bottom: 4rem;
+}
+body .goods-list__item-container {
+  border-bottom: 2px solid rgba(90, 94, 97, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 7rem;
+  padding: 1rem 0;
+}
+body .goods-list__price {
+  padding-top: 1rem;
+}
+body .goods-list__add-favorite-button {
+  width: 12rem;
+}
+body .goods-list__order-button {
+  width: 15rem;
+  margin-bottom: 4rem;
+  left: 43vw;
+}
+body .goods-list .button-catalog {
+  margin-top: 0;
+  position: relative;
+}
+
+body .order {
+  padding-bottom: 2rem;
+}
+body .order__container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+body .order__bread-crumbs {
+  padding: 2rem 0;
+}
+body .order__title {
+  font-size: 2.8rem;
+  font-weight: normal;
+  margin-left: 4rem;
+}
+body .order__select-payment-method-container img {
+  max-width: 1.2rem;
+}
+body .order__goods-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 78vh;
+}
+body .order__goods-list img {
+  max-width: 10rem;
+  max-height: 10rem;
+  margin-right: 2rem;
+}
+body .order__item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40rem;
+  border-bottom: 2px solid rgba(90, 94, 97, 0.3);
+}
+body .order .big-input {
+  width: 37rem;
+}
+body .order__inputs-phone-and-city, body .order__inputs-house-and-apartment, body .order__inputs-validity-period-and-cvc {
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+}
+body .order ul {
+  list-style-position: inside;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+body .order .button-catalog {
+  margin: 0;
+  width: 15rem;
+}
+body .order .small-text {
+  padding: 1.5rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

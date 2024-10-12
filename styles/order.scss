@@ -1,0 +1,79 @@
+body {
+  .order {
+    padding-bottom: 2rem;
+
+    &__container {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem 0;
+    }
+
+
+    &__bread-crumbs {
+      padding: 2rem 0;
+    }
+
+    &__title {
+      font-size: 2.8rem;
+      font-weight: normal;
+      margin-left: 4rem;
+    }
+
+    &__select-payment-method-container {
+      img {
+        max-width: 1.2rem;
+      }
+    }
+
+    &__goods-list {
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      max-height: 78vh;
+
+      img {
+        max-width: 10rem;
+        max-height: 10rem;
+        margin-right: 2rem;
+      }
+    }
+
+    &__item-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 40rem;
+      border-bottom: 2px solid rgba(90,94,97,0.3);
+    }
+
+
+    .big-input {
+      width: 37rem;
+    }
+
+    &__inputs-phone-and-city,
+    &__inputs-house-and-apartment,
+    &__inputs-validity-period-and-cvc {
+      display: flex;
+      justify-content: space-between;
+      width: 40rem;
+    }
+
+
+    ul {
+      list-style-position: inside;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .button-catalog {
+      margin: 0;
+      width: 15rem;
+    }
+
+    .small-text {
+      padding: 1.5rem 0;
+    }
+  }
+}

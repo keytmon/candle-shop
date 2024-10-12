@@ -1,0 +1,71 @@
+body {
+  position: relative;
+  z-index: 3;
+
+  .favorites {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &__container {
+      background-color: #F4F2F3;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      width: 35vw;
+      height: 100vh;
+      position: relative;
+      left: 65%;
+    }
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      border-bottom: 1.5px solid rgba(90,94,97,0.4);
+    }
+
+    &__title {
+      padding: 2rem 0 1rem 1rem;
+      font-weight: bold;
+    }
+
+    &__closed-button {
+      align-self: flex-start;
+      img {
+        max-width: 1.5rem;
+      }
+    }
+
+    &__item {
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        max-width: 6rem;
+      }
+    }
+
+    &__item-text {
+      max-width: 18rem;
+      padding-left: 1rem;
+    }
+
+    &__candle-name {
+      padding-bottom: 0.8rem;
+    }
+
+    &__cancel-button {
+      padding-left: 1rem;
+      img {
+        content: url("/images/cancel.png");
+        max-width: 1.2rem;
+      }
+    }
+
+    &__cancel-button.hover{
+      img {
+        content: url("/images/cancel-active.png");
+      }
+    }
+  }
+}
