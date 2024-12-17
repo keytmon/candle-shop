@@ -16,21 +16,38 @@ body {
     &__title {
       font-size: 2.8rem;
       font-weight: normal;
-      margin-left: 4rem;
+      //margin-left: 4rem;
+      text-align: center;
     }
 
     &__select-payment-method-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 7rem;
+      padding-bottom: 1.5rem;
       img {
         max-width: 1.2rem;
+        margin-right: 0.5rem;
       }
     }
 
+    &__online-payment,
+    &__card-payment,
+    &__cash-payment {
+      display: flex;
+      align-items: center;
+    }
+
     &__goods-list {
+      scrollbar-color: #444748 transparent;
+      scrollbar-width: thin;
       display: flex;
       flex-direction: column;
       overflow-y: scroll;
       overflow-x: hidden;
-      max-height: 78vh;
+      margin-top: 4.6rem;
+      height: 70vh;
 
       img {
         max-width: 10rem;
@@ -43,7 +60,7 @@ body {
       display: flex;
       flex-direction: row;
       align-items: center;
-      width: 40rem;
+      width: 44rem;
       border-bottom: 2px solid rgba(90,94,97,0.3);
     }
 
@@ -64,16 +81,46 @@ body {
     ul {
       list-style-position: inside;
       padding-left: 1rem;
-      padding-bottom: 1rem;
+      //padding-bottom: 1rem;
     }
 
-    .button-catalog {
-      margin: 0;
+    &__order-form-button {
       width: 15rem;
+      margin: 0 2rem 0 0;
     }
 
     .small-text {
       padding: 1.5rem 0;
+    }
+
+    &__delete-item {
+      margin-left: 2rem;
+      margin-top: 1.6rem;
+      align-self: flex-start;
+    }
+
+    &__delete-button {
+      img {
+        max-width: 1.5rem;
+      }
+    }
+
+    &__form-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    &__buttons {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 60rem;
+    }
+
+    &__back-in-basket {
+      margin: 0;
+      width: 18rem;
     }
   }
 }

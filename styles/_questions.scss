@@ -16,11 +16,13 @@ body {
 
     &__item {
       width: 60rem;
+      height: 4rem;
       border-bottom: 2px solid rgba(90,94,97,0.2);
+      transition: height linear 0.8s;
     }
 
     &__question {
-      padding: 1.5rem 0;
+      margin: 1.5rem 0;
       font-weight: bold;
       display: flex;
       justify-content: space-between;
@@ -36,9 +38,18 @@ body {
     }
 
     &__answer {
-      display: none;
-      padding-bottom: 1.5rem;
+      opacity: 0;
     }
 
+    &__answer.active {
+      opacity: 100%;
+      transition: opacity 1s ease-in-out 0.5s;
+    }
+
+    &__item.active {
+      height: 9rem;
+      transition: height linear 1s;
+    }
   }
+
 }

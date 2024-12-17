@@ -52,8 +52,27 @@ body {
         max-height: 12.8rem;
       }
     }
+
     .candle-card {
-      max-width: 23rem;
+      max-width: 22rem;
+    }
+
+    //.card__card-container {
+    //  img {
+    //    content: url("/images/candle-8-1.png");
+    //  }
+    //}
+
+    .order__item-container {
+      max-width: 40rem;
+    }
+
+    .order__goods-list {
+      max-height: 26rem;
+    }
+
+    .big-input {
+      max-width: 36.5rem;
     }
 
   }

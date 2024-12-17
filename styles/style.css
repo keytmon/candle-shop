@@ -281,7 +281,16 @@ body .header__button {
     max-height: 12.8rem;
   }
   body .candle-card {
-    max-width: 23rem;
+    max-width: 22rem;
+  }
+  body .order__item-container {
+    max-width: 40rem;
+  }
+  body .order__goods-list {
+    max-height: 26rem;
+  }
+  body .big-input {
+    max-width: 36.5rem;
   }
 }
 
@@ -330,10 +339,12 @@ body .questions__text-container {
 }
 body .questions__item {
   width: 60rem;
+  height: 4rem;
   border-bottom: 2px solid rgba(90, 94, 97, 0.2);
+  transition: height linear 0.8s;
 }
 body .questions__question {
-  padding: 1.5rem 0;
+  margin: 1.5rem 0;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -347,8 +358,15 @@ body .questions__question:after {
   color: rgba(90, 94, 97, 0.5);
 }
 body .questions__answer {
-  display: none;
-  padding-bottom: 1.5rem;
+  opacity: 0;
+}
+body .questions__answer.active {
+  opacity: 100%;
+  transition: opacity 1s ease-in-out 0.5s;
+}
+body .questions__item.active {
+  height: 9rem;
+  transition: height linear 1s;
 }
 
 body .screen-catalog {
@@ -478,7 +496,7 @@ body .catalog__filter-title {
   font-weight: bold;
   padding-bottom: 1rem;
 }
-body .catalog__filter-collection {
+body .catalog__filter-brand {
   display: flex;
   align-items: center;
   padding: 0.8rem 0;
@@ -540,27 +558,35 @@ body .card__candle-quantity-counter-container {
   width: 4rem;
 }
 
-body {
-  position: relative;
-  z-index: 3;
-}
 body .favorites {
-  max-width: 100%;
-  max-height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+body .favorites__empty-space {
+  position: fixed;
+  width: 65vw;
+  height: 100vh;
 }
 body .favorites__container {
   background-color: #F4F2F3;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   width: 35vw;
   height: 100vh;
-  position: relative;
+  position: absolute;
   left: 65%;
+  transform: translateX(150%);
+  animation: ani 1.2s forwards;
 }
 body .favorites__head {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.87rem 1rem;
   border-bottom: 1.5px solid rgba(90, 94, 97, 0.4);
 }
 body .favorites__title {
@@ -598,6 +624,35 @@ body .favorites__cancel-button img {
 }
 body .favorites__cancel-button.hover img {
   content: url("/images/cancel-active.png");
+}
+body .favorites:has(.favorites__container) {
+  display: inline-block;
+}
+body .favorites__container.no-active {
+  animation: ani2 1s forwards;
+}
+body .favorites:has(.favorites__container.no-active) {
+  width: 0;
+  height: 0;
+}
+body .favorites:has(.favorites__container.no-active) .favorites__empty-space {
+  display: none;
+}
+@keyframes ani {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes ani2 {
+  0% {
+    transform: translateX(184%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
 }
 
 body .basket-head__bread-crumbs {
@@ -660,17 +715,32 @@ body .order__bread-crumbs {
 body .order__title {
   font-size: 2.8rem;
   font-weight: normal;
-  margin-left: 4rem;
+  text-align: center;
+}
+body .order__select-payment-method-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 7rem;
+  padding-bottom: 1.5rem;
 }
 body .order__select-payment-method-container img {
   max-width: 1.2rem;
+  margin-right: 0.5rem;
+}
+body .order__online-payment, body .order__card-payment, body .order__cash-payment {
+  display: flex;
+  align-items: center;
 }
 body .order__goods-list {
+  scrollbar-color: #444748 transparent;
+  scrollbar-width: thin;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
-  max-height: 78vh;
+  margin-top: 4.6rem;
+  height: 70vh;
 }
 body .order__goods-list img {
   max-width: 10rem;
@@ -681,7 +751,7 @@ body .order__item-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 40rem;
+  width: 44rem;
   border-bottom: 2px solid rgba(90, 94, 97, 0.3);
 }
 body .order .big-input {
@@ -695,14 +765,36 @@ body .order__inputs-phone-and-city, body .order__inputs-house-and-apartment, bod
 body .order ul {
   list-style-position: inside;
   padding-left: 1rem;
-  padding-bottom: 1rem;
 }
-body .order .button-catalog {
-  margin: 0;
+body .order__order-form-button {
   width: 15rem;
+  margin: 0 2rem 0 0;
 }
 body .order .small-text {
   padding: 1.5rem 0;
+}
+body .order__delete-item {
+  margin-left: 2rem;
+  margin-top: 1.6rem;
+  align-self: flex-start;
+}
+body .order__delete-button img {
+  max-width: 1.5rem;
+}
+body .order__form-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+body .order__buttons {
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 60rem;
+}
+body .order__back-in-basket {
+  margin: 0;
+  width: 18rem;
 }
 
 /*# sourceMappingURL=style.css.map */
