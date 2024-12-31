@@ -52,19 +52,5 @@ body {
        text-align: center;
      }
    }
-
-   &__candle-quantity-counter {
-     img {
-       width: 0.9rem;
-     }
-   }
-
-   &__candle-quantity-counter-container {
-     display: flex;
-     justify-content: space-between;
-     width: 4rem;
-   }
-
-
  }
 }

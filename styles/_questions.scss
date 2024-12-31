@@ -2,7 +2,6 @@ body {
   .questions {
     padding: 2rem 0;
 
-
     &__content {
       display: flex;
       justify-content: space-evenly;
@@ -16,13 +15,13 @@ body {
 
     &__item {
       width: 60rem;
-      height: 4rem;
+      max-height: 9rem;
       border-bottom: 2px solid rgba(90,94,97,0.2);
       transition: height linear 0.8s;
     }
 
     &__question {
-      margin: 1.5rem 0;
+      height: 5rem;
       font-weight: bold;
       display: flex;
       justify-content: space-between;
@@ -39,17 +38,18 @@ body {
 
     &__answer {
       opacity: 0;
+      height: 0;
+      visibility: hidden;
+      transition: all 1s ease-in-out 0.3s;
     }
 
     &__answer.active {
+      visibility: visible;
+      height: 5rem;
       opacity: 100%;
-      transition: opacity 1s ease-in-out 0.5s;
+      transition: all 1s ease-in-out 0.5s;
     }
 
-    &__item.active {
-      height: 9rem;
-      transition: height linear 1s;
-    }
   }
 
 }

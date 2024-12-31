@@ -339,12 +339,12 @@ body .questions__text-container {
 }
 body .questions__item {
   width: 60rem;
-  height: 4rem;
+  max-height: 9rem;
   border-bottom: 2px solid rgba(90, 94, 97, 0.2);
   transition: height linear 0.8s;
 }
 body .questions__question {
-  margin: 1.5rem 0;
+  height: 5rem;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -359,18 +359,19 @@ body .questions__question:after {
 }
 body .questions__answer {
   opacity: 0;
+  height: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out 0.3s;
 }
 body .questions__answer.active {
+  visibility: visible;
+  height: 5rem;
   opacity: 100%;
-  transition: opacity 1s ease-in-out 0.5s;
-}
-body .questions__item.active {
-  height: 9rem;
-  transition: height linear 1s;
+  transition: all 1s ease-in-out 0.5s;
 }
 
 body .screen-catalog {
-  padding: 16rem 0 6rem;
+  margin: 16rem 0 6rem;
 }
 body .screen-catalog__content {
   display: flex;
@@ -549,14 +550,6 @@ body .card__button-like {
 body .card .card-img p {
   text-align: center;
 }
-body .card__candle-quantity-counter img {
-  width: 0.9rem;
-}
-body .card__candle-quantity-counter-container {
-  display: flex;
-  justify-content: space-between;
-  width: 4rem;
-}
 
 body .favorites {
   position: fixed;
@@ -670,6 +663,9 @@ body .basket-head__head-container {
   margin: 0 7rem;
   border-bottom: 2px solid rgba(90, 94, 97, 0.4);
 }
+body .quantity-counter img {
+  width: 0.9rem;
+}
 
 body .goods-list__card-img {
   max-width: 10rem;
@@ -699,6 +695,9 @@ body .goods-list__order-button {
 body .goods-list .button-catalog {
   margin-top: 0;
   position: relative;
+}
+body .goods-list__delete-button img {
+  max-width: 2rem;
 }
 
 body .order {

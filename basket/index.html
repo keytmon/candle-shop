@@ -19,6 +19,7 @@
 </head>
 <body>
 <div class="favorites no-active">
+    <div class="favorites__empty-space"></div>
 </div>
 <header class="header">
     <div class="header-content menu-light">
@@ -43,7 +44,9 @@
                     <img class="header__like like" src="/images/like.png" alt="heart">
                 </button>
                 <button class="header__basket-button">
+                    <a href="http://localhost:63342/candle-shop/basket/">
                     <img class="header__basket basket" src="/images/basket.png" alt="basket">
+                    </a>
                 </button>
             </div>
         </div>
@@ -78,6 +81,11 @@
                 </button>
             </div>
             <button class="goods-list__add-favorite-button button-catalog">В избранное</button>
+            <div class="goods-list__delete-item">
+                <button class="goods-list__delete-button">
+                    <img src="/images/cancel.png" alt="cancel">
+                </button>
+            </div>
         </div>
         <div class="goods-list__item-container">
             <img class="goods-list__card-img" src="/images/candle-1.png" alt="candle">
@@ -95,6 +103,11 @@
                 </button>
             </div>
             <button class="goods-list__add-favorite-button button-catalog">В избранное</button>
+            <div class="goods-list__delete-item">
+                <button class="goods-list__delete-button">
+                    <img src="/images/cancel.png" alt="cancel">
+                </button>
+            </div>
         </div>
         <div class="goods-list__item-container">
             <img class="goods-list__card-img" src="/images/candle-1.png" alt="candle">
@@ -112,9 +125,15 @@
                 </button>
             </div>
             <button class="goods-list__add-favorite-button button-catalog">В избранное</button>
+            <div class="goods-list__delete-item">
+                <button class="goods-list__delete-button">
+                    <img src="/images/cancel.png" alt="cancel">
+                </button>
+            </div>
         </div>
 </div>
-    <button class="goods-list__order-button button-catalog">Оформить заказ</button>
+    <button class="goods-list__order-button button-catalog"
+            onclick="window.location='http://localhost:63342/candle-shop/order/'">Оформить заказ</button>
 </div>
 
 <footer class="footer">
@@ -164,5 +183,6 @@
     </div>
 </footer>
 <script src="/main/app.js"></script>
+<script src="/main/goods.js"></script>
 </body>
 </html>

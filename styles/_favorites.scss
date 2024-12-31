@@ -20,13 +20,12 @@ body {
     &__container {
       background-color: #F4F2F3;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-      //background-color: rgba(0, 0, 0, 0.5);
       width: 35vw;
       height: 100vh;
       position: absolute;
       left: 65%;
       transform: translateX(150%);
-      animation: ani 1.2s forwards;
+      animation: open 1.2s forwards;
     }
 
     &__head {
@@ -53,9 +52,10 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      img {
-        max-width: 6rem;
-      }
+    }
+
+    &__item-image {
+      max-width: 6rem;
     }
 
     &__item-text {
@@ -67,35 +67,30 @@ body {
       padding-bottom: 0.8rem;
     }
 
-    &__cancel-button {
-      padding-left: 1rem;
-      img {
-        content: url("/images/cancel.png");
-        max-width: 1.2rem;
-      }
-    }
-
-    &__cancel-button.hover{
-      img {
-        content: url("/images/cancel-active.png");
-      }
-    }
+    //&__cancel-button {
+    //  padding-left: 1rem;
+    //  img {
+    //    content: url("/images/cancel.png");
+    //    max-width: 1.2rem;
+    //  }
+    //}
+    //
+    //&__cancel-button.hover{
+    //  img {
+    //    content: url("/images/cancel-active.png");
+    //  }
+    //}
   }
 
   .favorites:has( .favorites__container) {
-      display: inline-block;
+    display: inline-block;
   }
 
   .favorites__container.no-active {
-    //transform: translateX(-150%);
-    animation: ani2 1s forwards;
-
-
+    animation: close 1s forwards;
   }
 
-
   .favorites:has( .favorites__container.no-active) {
-
     width: 0;
     height: 0;
 
@@ -103,24 +98,15 @@ body {
       display: none;
     }
   }
-  //.favorites.no-active {
-  //  //display: none;
-  //  visibility: hidden;
-  //}
 
-  @keyframes ani {
+  @keyframes open {
     0% {transform: translateX(150%);}
     100% {transform: translateY(0);}
   }
 
-  @keyframes ani2 {
+  @keyframes close {
     0% {transform: translateX(184%);}
     100% {transform: translateX(300%);}
   }
-
-  //@keyframes ani2 {
-  //  0% {transform: translateY(0);}
-  //  100% {transform: translateX(150%);}
-  //}
 
 }

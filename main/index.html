@@ -56,7 +56,7 @@
                 <a href="index.html"><p>Candle shop</p></a>
             </div>
             <div class="header__catalog">
-                <a href="http://localhost:63342/candle-shop/catalog/index.html">Каталог</a></div>
+                <a href="http://localhost:63342/candle-shop/catalog/">Каталог</a></div>
             <div class="header__delivery"><a href="#delivery">Доставка</a></div>
             <div class="header__questions"><a href="#q&a">Вопросы</a></div>
             <div class="header__about-us">
@@ -82,7 +82,8 @@
             <div class="header__text small-text">Ароматические свечи ручной работы</div>
         </div>
         <div class="header__banner-button">
-            <button class="header__button button-catalog">Каталог</button>
+            <button class="header__button button-catalog"
+                    onclick="window.location='http://localhost:63342/candle-shop/catalog/'">Каталог</button>
         </div>
     </div>
 </header>
@@ -93,7 +94,8 @@
         <p class="screen-catalog__text medium-text">Выбирайте<br> свой<br> аромат</p>
     </div>
     <div class="screen-catalog__button-container">
-        <button class="screen-catalog__button button-catalog">Каталог</button>
+        <button class="screen-catalog__button button-catalog"
+                onclick="window.location='http://localhost:63342/candle-shop/catalog/'">Каталог</button>
     </div>
 </div>
 <div class="popular-goods">
@@ -217,27 +219,33 @@
     <div class="questions__content">
         <div class="questions__text-container">
             <div class="questions__item">
-                <p class="questions__question small-text ">Как правильно жечь свечи?</p>
-                <p class="questions__answer">Если вы держите свечу меньше двух часов, то воск
-                плавится неравномерно. Свечу не рекомендуется задувать, дым от фитиля затмевает запах,
-                который источала свеча. Хлопчатобумажный фитиль необходимо подрезать ножницами
-                перед использованием, чтобы пламя не поднималось слишком высоко.</p>
+                <div class="questions__question small-text">Как правильно жечь свечи?</div>
+                <div class="questions__answer">Если вы держите свечу меньше двух часов, то воск
+                    плавится неравномерно. Свечу не рекомендуется задувать, дым от фитиля затмевает запах,
+                    который источала свеча. Хлопчатобумажный фитиль необходимо подрезать ножницами
+                    перед использованием, чтобы пламя не поднималось слишком высоко.</div>
+            </div>
+
+            <div class="questions__item">
+                <div class="questions__question small-text">Вредны ли ароматические свечи?</div>
+                <div class="questions__answer">В составе наших свечей только натуральные компоненты,
+                    поэтому вреда не будет даже при продолжительном использовании.</div>
             </div>
             <div class="questions__item">
-                <p class="questions__question small-text not-visible">Вредны ли ароматические свечи?</p>
-                <p class="questions__answer"></p>
+                <div class="questions__question small-text">Что добавляют в свечи для запаха?</div>
+                <div class="questions__answer">В наши свечи для запаха добавляются эфирные масла и ароматизаторы.</div>
             </div>
             <div class="questions__item">
-                <p class="questions__question small-text not-visible">Что добавляют в свечи для запаха?</p>
-                <p class="questions__answer"></p>
+                <div class="questions__question small-text">Почему свеча не пахнет при горении?</div>
+                <div class="questions__answer">
+                    Возможно, вы слишком долго ее жжете: при интенсивном нагревании восковой основы аромамасла
+                    «запечатываются» и не выделяются в воздух. Потушите и охладите свечу перед следующим зажиганием,
+                    чтобы вновь насладиться приятным тонким запахом.
+                </div>
             </div>
             <div class="questions__item">
-                <p class="questions__question small-text not-visible">Почему свеча не пахнет при горении?</p>
-                <p class="questions__answer"></p>
-            </div>
-            <div class="questions__item">
-                <p class="questions__question small-text not-visible">Из чего делают ароматические свечи?</p>
-                <p class="questions__answer"></p>
+                <div class="questions__question small-text">Из чего делают ароматические свечи?</div>
+                <div class="questions__answer">Наши свечи изготавливаются из растительного воска.</div>
             </div>
         </div>
         <div class="questions__img-container">
@@ -356,5 +364,6 @@
 </footer>
 <script src="app.js"></script>
 <script src="goods.js"></script>
+<script src="faq.js"></script>
 </body>
 </html>

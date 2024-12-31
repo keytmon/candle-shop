@@ -19,6 +19,7 @@
 </head>
 <body>
 <div class="favorites no-active">
+    <div class="favorites__empty-space"></div>
 </div>
 <header class="header">
     <div class="header-content menu-light">
@@ -43,7 +44,9 @@
                     <img class="header__like like" src="/images/like.png" alt="heart">
                 </button>
                 <button class="header__basket-button">
+                    <a href="http://localhost:63342/candle-shop/basket/">
                     <img class="header__basket basket" src="/images/basket.png" alt="basket">
+                    </a>
                 </button>
             </div>
         </div>
@@ -182,7 +185,8 @@
         <p class="order__order-sum small-text">Итоговая стоимость заказа: 4800 руб.</p>
         <div class="order__buttons">
         <button class="order__order-form-button button-catalog">Оформить заказ</button>
-        <button class="order__back-in-basket button-catalog">Вернуться в корзину</button>
+        <button class="order__back-in-basket button-catalog"
+                onclick="window.location='http://localhost:63342/candle-shop/basket/'">Вернуться в корзину</button>
         </div>
     </div>
 </div>
@@ -233,5 +237,6 @@
     </div>
 </footer>
 <script src="/main/app.js"></script>
+<script src="/main/goods.js"></script>
 </body>
 </html>
