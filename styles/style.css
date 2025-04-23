@@ -492,6 +492,7 @@ body .catalog .candle-card {
 }
 body .catalog .goods {
   padding: 0;
+  flex-wrap: wrap;
 }
 body .catalog__filter-title {
   font-weight: bold;
@@ -574,7 +575,7 @@ body .favorites__container {
   position: absolute;
   left: 65%;
   transform: translateX(150%);
-  animation: ani 1.2s forwards;
+  animation: open 1.2s forwards;
 }
 body .favorites__head {
   display: flex;
@@ -598,7 +599,7 @@ body .favorites__item {
   justify-content: space-around;
   align-items: center;
 }
-body .favorites__item img {
+body .favorites__item-image {
   max-width: 6rem;
 }
 body .favorites__item-text {
@@ -608,21 +609,11 @@ body .favorites__item-text {
 body .favorites__candle-name {
   padding-bottom: 0.8rem;
 }
-body .favorites__cancel-button {
-  padding-left: 1rem;
-}
-body .favorites__cancel-button img {
-  content: url("/images/cancel.png");
-  max-width: 1.2rem;
-}
-body .favorites__cancel-button.hover img {
-  content: url("/images/cancel-active.png");
-}
 body .favorites:has(.favorites__container) {
   display: inline-block;
 }
 body .favorites__container.no-active {
-  animation: ani2 1s forwards;
+  animation: close 1s forwards;
 }
 body .favorites:has(.favorites__container.no-active) {
   width: 0;
@@ -631,7 +622,7 @@ body .favorites:has(.favorites__container.no-active) {
 body .favorites:has(.favorites__container.no-active) .favorites__empty-space {
   display: none;
 }
-@keyframes ani {
+@keyframes open {
   0% {
     transform: translateX(150%);
   }
@@ -639,7 +630,7 @@ body .favorites:has(.favorites__container.no-active) .favorites__empty-space {
     transform: translateY(0);
   }
 }
-@keyframes ani2 {
+@keyframes close {
   0% {
     transform: translateX(184%);
   }
