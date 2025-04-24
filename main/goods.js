@@ -41,7 +41,7 @@ let goods = [];
 const candle1 = {
     id: 1,
     name: 'Ароматическая свеча "Blackberry & Pine"',
-    image: '../images/candle-1.png',
+    image: '/images/catalog/candle-1.png',
     brand: 'MIZUWORLD',
     price: 1500,
     aroma: 'Blackberry & Pine',
@@ -51,7 +51,7 @@ const candle1 = {
 const candle2 = {
     id: 2,
     name: 'Ароматическая свеча "Get your happy on"',
-    image: '../images/candle-2.png',
+    image: '/images/catalog/candle-2.png',
     brand: 'MY FLAME',
     price: 1300,
     aroma: 'Oriental Mandarin',
@@ -61,7 +61,7 @@ const candle2 = {
 const candle3 = {
     id: 3,
     name: 'Ароматическая свеча "Lemongrass & Jasmine"',
-    image: '../images/candle-3.png',
+    image: '/images/catalog/candle-3.png',
     brand: 'MIZUWORLD',
     price: 1500,
     aroma: 'Lemongrass & Jasmine',
@@ -71,7 +71,7 @@ const candle3 = {
 const candle4 = {
     id: 4,
     name: 'Ароматическая свеча "Oakmoss & Cedar"',
-    image: '../images/candle-4.png',
+    image: '/images/catalog/candle-4.png',
     brand: 'MIZUWORLD',
     price: 1500,
     aroma: 'Oakmoss & Cedar',
@@ -81,7 +81,7 @@ const candle4 = {
 const candle5 = {
     id: 5,
     name: 'Ароматическая свеча "Life is fun"',
-    image: '../images/candle-5.png',
+    image: '/images/catalog/candle-5.png',
     brand: 'MY FLAME',
     price: 1300,
     aroma: 'Warm Cashmere',
@@ -91,7 +91,7 @@ const candle5 = {
 const candle6 = {
     id: 6,
     name: 'Ароматическая свеча "PS: ♡"',
-    image: '../images/candle-6.png',
+    image: '/images/catalog/candle-6.png',
     brand: 'MY FLAME',
     price: 1300,
     aroma: 'Amber`s Secret',
@@ -101,7 +101,7 @@ const candle6 = {
 const candle7 = {
     id: 7,
     name: 'Ароматическая свеча "Thinking of you<sup>♡</sup>"',
-    image: '../images/candle-7.png',
+    image: '/images/catalog/candle-7.png',
     brand: 'MY FLAME',
     price: 1300,
     aroma: 'Green Tea Time',
@@ -111,7 +111,7 @@ const candle7 = {
 const candle8 = {
     id: 8,
     name: 'Ароматическая свеча "Vanilla Bean"',
-    image: '../images/candle-8.png',
+    image: '/images/catalog/candle-8.png',
     brand: 'ECOYA',
     price: 1400,
     aroma: 'Vanilla Bean',
@@ -121,7 +121,7 @@ const candle8 = {
 const candle9 = {
     id: 9,
     name: 'Ароматическая свеча "French Pear"',
-    image: '../images/candle-9.png',
+    image: '/images/catalog/candle-9.png',
     brand: 'ECOYA',
     price: 1400,
     aroma: 'French Pear',

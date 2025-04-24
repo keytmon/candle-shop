@@ -3,6 +3,7 @@ body {
     padding: 2rem 0;
 
     &__content {
+      padding: 0 4rem;
       display: flex;
       justify-content: space-around;
     }
@@ -15,18 +16,22 @@ body {
     }
 
     &__sidebar {
+      //padding-left: 4rem;
+      //padding-right: 1rem;
       display: flex;
       flex-direction: column;
       max-width: 30rem;
+      height: 100vh;
     }
 
-    .candle-card {
-      margin-right: 3rem;
-    }
+    //.candle-card {
+    //  margin-right: 3rem;
+    //}
 
     .goods {
       padding: 0;
       flex-wrap: wrap;
+      max-width: 80vw;
     }
 
     //&__filter-buttons {

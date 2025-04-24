@@ -53,4 +53,6 @@ document.addEventListener("DOMContentLoaded", function (){
     favoritesEmptySpace.addEventListener("click", () => {
         favoritesContainer.classList.add('no-active');
     })
+
+
 })
